@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		5CF6DD3026004AC6008491BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6DD2F26004AC6008491BF /* ContentView.swift */; };
 		5CF6DD3226004AC7008491BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF6DD3126004AC7008491BF /* Assets.xcassets */; };
 		5CF6DD3526004AC7008491BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF6DD3426004AC7008491BF /* Preview Assets.xcassets */; };
+		5CF6DD3F26004AE7008491BF /* DataObject in Frameworks */ = {isa = PBXBuildFile; productRef = 5CF6DD3E26004AE7008491BF /* DataObject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CF6DD3F26004AE7008491BF /* DataObject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "DataObject-Test";
+			packageProductDependencies = (
+				5CF6DD3E26004AE7008491BF /* DataObject */,
+			);
 			productName = "DataObject-Test";
 			productReference = 5CF6DD2A26004AC6008491BF /* DataObject-Test.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 5CF6DD2126004AC6008491BF;
+			packageReferences = (
+				5CF6DD3D26004AE7008491BF /* XCRemoteSwiftPackageReference "DataObject" */,
+			);
 			productRefGroup = 5CF6DD2B26004AC6008491BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CF6DD3D26004AE7008491BF /* XCRemoteSwiftPackageReference "DataObject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/DataObject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CF6DD3E26004AE7008491BF /* DataObject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CF6DD3D26004AE7008491BF /* XCRemoteSwiftPackageReference "DataObject" */;
+			productName = DataObject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CF6DD2226004AC6008491BF /* Project object */;
 }
